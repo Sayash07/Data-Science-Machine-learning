@@ -1,3 +1,4 @@
+from functools import reduce
 students = [
     {"name": "Ram", "age": 20, "marks": 75},
     {"name": "Shyam", "age": 21, "marks": 85},
@@ -25,10 +26,19 @@ print(lowest_marks[0])
 
 
 # find the average of students:
-average = [el["marks"] for el in students]
-sum = 
+average = reduce(lambda pre,cur:(pre+cur["marks"])/len(students),students,0)
 
 print(average)
 
 #find the student whose score is greater than 80
 #find the 
+
+students_above_80 = list(filter(lambda el:el["marks"]> 80,students))
+print(students_above_80)
+
+students_above_81 = [el for el in students if(el["marks"]>=80)]
+print(students_above_81)
+
+
+increament= [{**el,"marks" : el["marks"]+10} for el in students]
+print(increament)
