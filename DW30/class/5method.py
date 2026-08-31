@@ -19,5 +19,10 @@ obj1.addTeacher()
 #Get method using class
 Student.getTeacher(obj1)
 
+""" 
+Object variable >> It can control obj variable
+Static Variable >> It cannot control variable
+Class variable >>It can control class variable"""
+
 
               
