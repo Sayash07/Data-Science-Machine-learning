@@ -1,0 +1,4 @@
+Statistics
+Probability
+Linear Algebra 
+Calculus >> Derivatives 
